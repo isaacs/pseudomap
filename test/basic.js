@@ -17,7 +17,6 @@ function runTests (Map) {
 
   t.equal(m.size, 0)
 
-
   m.set(1, '1 string')
   t.equal(m.get(1), '1 string')
   t.equal(m.size, 1)
@@ -26,9 +25,12 @@ function runTests (Map) {
   m.size = 0
   t.equal(m.size, 1)
 
-  m.set(1, 'number 1')
-  m.set('1', 'string 1')
+  m = new Map([[1, 'number 1'], ['1', 'string 1']])
+  t.equal(m.get(1), 'number 1')
+  t.equal(m.get('1'), 'string 1')
+  t.equal(m.size, 2)
 
+  m = new Map(m)
   t.equal(m.get(1), 'number 1')
   t.equal(m.get('1'), 'string 1')
   t.equal(m.size, 2)

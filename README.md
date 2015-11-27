@@ -35,6 +35,10 @@ with the following exceptions:
 1. A `Map` object is not an iterator.
 2. `values`, `keys`, and `entries` methods are not implemented,
    because they return iterators.
+3. The argument to the constructor can be an Array of `[key, value]`
+   pairs, or a `Map` or `PseudoMap` object.  But, since iterators
+   aren't used, passing any plain-old iterator won't initialize the
+   map properly.
 
 ## USAGE
 
