@@ -3,6 +3,8 @@
 A thing that is a lot like ES6 `Map`, but without iterators, for use
 in environments where `for..of` syntax and `Map` are not available.
 
+[![Build Status](https://travis-ci.org/isaacs/pseudomap.svg?branch=master)](https://travis-ci.org/isaacs/pseudomap/) [![Coverage Status](https://coveralls.io/repos/isaacs/pseudomap/badge.svg?branch=master&service=github)](https://coveralls.io/github/isaacs/pseudomap?branch=master)
+
 If you need iterators, or just in general a more faithful polyfill to
 ES6 Maps, check out [es6-map](http://npm.im/es6-map).
 
