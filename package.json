@@ -2,7 +2,8 @@
   "name": "pseudomap",
   "version": "1.0.2",
   "files": [
-    "map.js"
+    "map.js",
+    "pseudomap.js"
   ],
   "description": "A thing that is a lot like ES6 `Map`, but without iterators, for use in environments where `for..of` syntax and `Map` are not available.",
   "main": "map.js",
