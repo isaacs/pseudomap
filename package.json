@@ -1,16 +1,23 @@
 {
   "name": "pseudomap",
   "version": "1.0.2",
+  "files": [
+    "map.js"
+  ],
   "description": "A thing that is a lot like ES6 `Map`, but without iterators, for use in environments where `for..of` syntax and `Map` are not available.",
   "main": "map.js",
   "directories": {
     "test": "test"
   },
   "devDependencies": {
-    "tap": "^2.3.1"
+    "tap": "^15.1.6"
   },
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tap",
+    "snap": "tap",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push origin --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -21,5 +28,11 @@
   "bugs": {
     "url": "https://github.com/isaacs/pseudomap/issues"
   },
-  "homepage": "https://github.com/isaacs/pseudomap#readme"
+  "homepage": "https://github.com/isaacs/pseudomap#readme",
+  "tap": {
+    "statements": 90,
+    "branches": 88,
+    "functions": 88,
+    "lines": 90
+  }
 }
