@@ -1,0 +1,32 @@
+{
+  "name": "pseudomap",
+  "homepage": "https://github.com/isaacs/pseudomap",
+  "version": "1.0.2.1",
+  "_release": "1.0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.2.1",
+    "commit": "706eb1745373826c3799fdfbdc3d676398ffc6a1"
+  },
+  "_source": "https://github.com/isaacs/pseudomap.git",
+  "_target": "v1.0.2",
+  "_originalSource": "https://github.com/isaacs/pseudomap.git",
+  "main": "index.js",
+  "authors": [
+    "Isaac Z. Schlueter and Contributors"
+  ],
+  "description": "Polyfill for ES6 Map object",
+  "keywords": [
+    "map",
+    "es6"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
